@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(to right,#8a2be2,#d87093);
+}
+
+.container{
+    height: 35rem;
+    width: 30rem;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+h1{
+    font-weight: 700;
+    font-family: 'Merienda', cursive;
+    font-size: 3rem;
+    padding: .2em 0;
+    /* color:#333; */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    border-radius: 4.6px;
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    border: none;
+}
+
+.top-text{
+    background: #000;
+    color: #fff;
+}
+
+.top-numbers{
+    color: #d87093;
+    background-color: #000;
+    border: none;
+    text-align: right;
+}
+
+.compute{
+    min-width: 100%;
+    font-weight: 700;
+    padding: 2em 1em;
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    text-align: right;
+}
+
+p{
+    padding: 1em;
+    text-align:right;
+}
+
+.sign{
+    background-color: #8a2be2;
+}
+
+.equal-sign{
+    background-color: #D9027D;
+    grid-column: span 2;
+}

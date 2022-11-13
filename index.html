@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <form name="calculator">
+            
+        <div class="top-text">
+            <input type="text" name="display" class="compute" id="compute-el">
+        </div>
+
+        <div class="grid">
+            <input type="button" class="grid-item" value="%" onclick="calculator.display.value+='%'">
+            <input type="button" class="grid-item" value="C" onclick="calculator.display.value= ''">
+            <input type="button" class="grid-item" value="BACK" onclick="calculator.display.value = display.value.slice(0, -1)">
+            <input type="button" class="grid-item sign" value="/" onclick="calculator.display.value+='/'">
+            <input type="button" class="grid-item" value="7" onclick="calculator.display.value+='7'">
+            <input type="button" class="grid-item" value="8" onclick="calculator.display.value+='8'">
+            <input type="button" class="grid-item" value="9" onclick="calculator.display.value+='9'">
+            <input type="button" class="grid-item sign" value="*" onclick="calculator.display.value+='*'">
+            <input type="button" class="grid-item" value="4" onclick="calculator.display.value+='4'">
+            <input type="button" class="grid-item" value="5" onclick="calculator.display.value+='5'">
+            <input type="button" class="grid-item" value="6" onclick="calculator.display.value+='6'">
+            <input type="button" class="grid-item sign" value="-" onclick="calculator.display.value+='-'" >
+            <input type="button" class="grid-item" value="1" onclick="calculator.display.value+='1'">
+            <input type="button" class="grid-item" value="2" onclick="calculator.display.value+='2'">
+            <input type="button" class="grid-item" value="3" onclick="calculator.display.value+='3'">
+            <input type="button" class="grid-item sign" value="+" onclick="calculator.display.value+='+'">
+            <input type="button" class="grid-item" value="0" onclick="calculator.display.value+='0'">
+            <input type="button" class="grid-item" value="." onclick="calculator.display.value+='.'">
+            <input type="button" class="grid-item equal-sign" value="=" onclick="calculator.display.value=eval(calculator.display.value)">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
